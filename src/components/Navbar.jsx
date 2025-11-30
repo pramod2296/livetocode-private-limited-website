@@ -31,9 +31,16 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold gradient-text">
-              Livetocode
-            </h1>
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="flex items-center"
+            >
+              <img
+                src="/logo.jpg"
+                alt="Livetocode Private Limited"
+                className="h-12 w-auto object-contain"
+              />
+            </button>
           </div>
 
           {/* Desktop Menu */}
